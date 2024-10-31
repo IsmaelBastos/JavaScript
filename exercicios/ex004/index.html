@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-innerHTML</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+        }
+
+        button{
+            font-size: 1.2em;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        section{
+            background-color: aquamarine;
+            width: 80%;
+            height: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        section p{
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Dados v.2.0</h1>
+<button onclick="dado()">Clique em mim !</button>
+<section id="resultado">
+<p>Vai aparacer aqui o resultado...</p>
+</section>
+<script>
+    function dado(){
+        let nome = window.prompt('Qual é o teu nome ?')
+        let res = window.document.getElementById('resultado')
+        res.innerHTML = (`<p>Olá <strong>${nome}</strong> ! Seja bem vindo ao meu site!&#x1f596</p>`)
+    }
+</script>
+</body>
+</html>
