@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
+}
+
+div{
+    width: 70%;
+    margin: auto;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+div button{
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
